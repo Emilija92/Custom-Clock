@@ -104,3 +104,30 @@ h1 {
     font-weight: bold;
     transition: all .5s ease-in;
 }
+
+/****************
+RESPONSIVE
+*****************/
+@media (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .clock {
+        width: 200px;
+        height: 200px;
+    }
+    .needle {
+        height: 65px;
+    }
+    .needle.minute {
+        height: 90px;
+    }
+    .needle.second {
+        height: 90px;
+    }
+
+}
