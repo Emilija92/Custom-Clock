@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Comfortaa,sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+background: #659999;
+background: -webkit-linear-gradient(to right, #f4791f, #659999);  
+background: linear-gradient(to right, #f4791f, #659999); }
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #659999;
+}
+.needle {
+    background-color: rgb(68, 68, 68);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 3px;
+    transform-origin: bottom center;
+}
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 140px;
+}
+.needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 140px;
+    background-color: #f4791f;
+}
+.center-point {
+    background-color: #f4791f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-point::after {
+    content: "";
+    background-color: rgb(68, 68, 68);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.time {
+    font-size: 60px;
+    margin-top: 30px;
+    color: beige;
+}
+.date {
+    color: beige;
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.circle {
+    background-color: #659999;
+    color: beige;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s ease-in;
+}
